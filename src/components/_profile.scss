@@ -1,0 +1,66 @@
+.profile {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 18px;
+    border-color: white;
+    min-width: 500px;
+    h2 {
+        padding: 0px 0px 30px 20px;
+        
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 200px;
+
+        label {
+            color: #CFD1D3;
+            font-weight: 600;
+            margin-bottom: 7px;
+        }
+        
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid;
+            border-color: #CFD1D3;
+        }
+        span {
+            color: #ff0505b3;
+            font-size: 15px;
+            padding: 5px;
+        }
+
+        .btn {
+            padding-top: 30px;
+            display: flex;
+            justify-content: flex-end;
+
+            .btnUpdate {
+                padding: 10px 20px 10px 20px;
+                background-color: #2E09DB;
+                color: white;
+                border-radius: 10px;
+                border: 0px solid;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            .btnCancel {
+                padding: 10px 20px 10px 20px;
+                background-color: #F6F4FF;
+                color: #4922DE;
+                border-radius: 10px;
+                border: 0px solid;
+                margin-left: 15px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
