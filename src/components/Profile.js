@@ -17,14 +17,14 @@ const Profile = () => {
   const email = useRef(profileData.email)
   const phone = useRef(profileData.phone)
   if (!profileData) return;
-  const onSubmit = async (data) => {
+  const onSubmit = async (data) => { 
     const res = await axios.post(`http://localhost:4000/api/updateprofile/${profileData._id}`,  {
-      name: name.current,
-      birth: birth.current,
-      email: email.current,
-      phone: phone.current
+      name: data.name,
+      birth: data.birth,
+      email: data.email,
+      phone: data.phone
     })
-    if (res.data.status === 200){
+    if (res.data.status === 200){ 
       localStorage.setItem('Profile', (JSON.stringify(res.data.data)))
     }
     toast.success("Update Susseccful!", {position: toast.POSITION.TOP_RIGHT})
@@ -33,8 +33,6 @@ const Profile = () => {
     localStorage.removeItem('Profile')
     navigate('/')
   }
-
-  
 
   return (
     <div className='profile'>

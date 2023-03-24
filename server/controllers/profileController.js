@@ -10,10 +10,10 @@ export const profileController = {
             idProfile,
             {
                 $set: {
-                    name: name.current,
-                    birth: birth.current,
-                    email: email.current,
-                    phone: phone.current
+                    name: name,
+                    birth: birth,
+                    email: email,
+                    phone: phone
                   },
           },
           { new: true }
